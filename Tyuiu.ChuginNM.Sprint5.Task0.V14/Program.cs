@@ -9,7 +9,7 @@ namespace Tyuiu.ChuginNM.Sprint5.Task0
         {
             DataService ds = new DataService();
 
-            Console.Title = "Спринт #1 | Выполнил: Чугин Н. М. | АСОиУб-25-1";
+            Console.Title = "Спринт #5 | Выполнил: Чугин Н. М. | АСОиУб-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Класс File. Запись данных в текстовый файл                        *");
