@@ -18,6 +18,8 @@ namespace Tyuiu.ChuginNM.Sprint5.Task1.V28.Lib
 
             }
 
+            table.Remove(-2);
+
             return table;
         }
     }
