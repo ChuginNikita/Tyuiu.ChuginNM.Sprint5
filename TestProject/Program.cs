@@ -4,19 +4,18 @@
     {
         static void Main(string[] args)
         {
-            double start = -11, end = -9, step = 1;
-            string outputFile = "OutPutFileTask1.txt";
-            for (double x = start; x <= end; x += step)
+            //int[,] array = { { -9, 10, 2 }, { 4, -8, 1 }, { 5, 3, -6 } };
+            //int[,] array = { { -5, 11, -4 }, { 1, 2, -4 }, { 4, 8, 3 } };
+            int[,] array = { { -5, 7, -4 }, { 10, -12, -4 }, { 14, 8, 3 } };
+            //int[,] array = { { 6, 9,  4 }, { 7, 2, 4 }, { 4, 8, 3 } };
+            int rowSum = 0;
+
+            for (int j = 0; j < array.GetLength(1); j++)
             {
-                double result = 2 * x - 3 * Math.Pow(x, 2) - 24;
-                if (double.IsInfinity(result) || double.IsNaN(result))
-                {
-                    result = 0;
-                }
-                result = Math.Round(result, 2);
-                File.AppendAllText(outputFile, $"{result}\n");
-                Console.WriteLine($"{result}");
+                rowSum -= array[2, j];
             }
+
+            Console.WriteLine(rowSum);
 
 
         }
