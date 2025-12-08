@@ -18,7 +18,7 @@ namespace Tyuiu.ChuginNM.Sprint5.Task1.V28.Lib
 
             }
 
-            table = table.Substring(0, table.Length - 2);
+            table = table.Substring(0, table.Length - 1);
 
             return table;
         }
