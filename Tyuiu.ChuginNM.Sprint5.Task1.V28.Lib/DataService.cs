@@ -14,7 +14,7 @@ namespace Tyuiu.ChuginNM.Sprint5.Task1.V28.Lib
 
             for (int x = startValue; x <= stopValue; x++)
             {
-                double funcResult = (x - 0.7 != 0) ? Math.Round((Math.Cos(x)) / (x - 0.7) - Math.Sin(x) * 12 * x + 2, 3) : 0;
+                double funcResult = (x - 0.7 != 0) ? Math.Round((Math.Cos(x)) / (x - 0.7) - Math.Sin(x) * 12 * x + 2, 2) : 0;
                 table += "| " + Convert.ToString(x).PadRight(3) + " | " + Convert.ToString(funcResult).PadRight(7) + " |\n";
 
             }
