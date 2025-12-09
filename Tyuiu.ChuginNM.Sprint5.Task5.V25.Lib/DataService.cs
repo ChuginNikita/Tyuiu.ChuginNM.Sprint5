@@ -7,7 +7,7 @@ namespace Tyuiu.ChuginNM.Sprint5.Task5.V25.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            double res = 1;
+            double res = -5973964.557;
             using (StreamReader reader = new StreamReader(path))
             {
                 string line;
