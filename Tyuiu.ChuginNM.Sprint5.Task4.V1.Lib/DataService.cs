@@ -6,7 +6,7 @@ namespace Tyuiu.ChuginNM.Sprint5.Task4.V1.Lib
     {
         public double LoadFromDataFile(string path)
         {
-            string data = File.ReadAllText(path);
+            string data = File.ReadAllText(path, encoding:System.Text.Encoding.UTF8);
 
             var x = Convert.ToDouble(data);
             double y = (Math.Cos(x) + x != 0) ? Math.Round((1 / (Math.Cos(x) + x)) - 4.12 * x, 3) : 0;
