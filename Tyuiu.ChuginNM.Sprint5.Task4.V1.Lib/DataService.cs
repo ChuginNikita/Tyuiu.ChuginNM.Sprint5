@@ -8,7 +8,7 @@ namespace Tyuiu.ChuginNM.Sprint5.Task4.V1.Lib
         {
             string data = File.ReadAllText(path);
 
-            double x = Convert.ToDouble(data);
+            var x = Convert.ToDouble(data);
             double y = (Math.Cos(x) + x != 0) ? Math.Round((1 / (Math.Cos(x) + x)) - 4.12 * x, 3) : 0;
 
             return y;
