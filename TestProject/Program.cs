@@ -1,21 +1,42 @@
-﻿namespace TestProject
+﻿using TestLib;
+
+namespace TestProject
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //int[,] array = { { -9, 10, 2 }, { 4, -8, 1 }, { 5, 3, -6 } };
-            //int[,] array = { { -5, 11, -4 }, { 1, 2, -4 }, { 4, 8, 3 } };
-            int[,] array = { { -5, 7, -4 }, { 10, -12, -4 }, { 14, 8, 3 } };
-            //int[,] array = { { 6, 9,  4 }, { 7, 2, 4 }, { 4, 8, 3 } };
-            int rowSum = 0;
+            TestLibService ts = new TestLibService();
 
-            for (int j = 0; j < array.GetLength(1); j++)
-            {
-                rowSum -= array[2, j];
-            }
+            Console.WriteLine(ts.nanForUpper("SDNsSA2KgDNJ5ShAJN3DNA6SJ"));
 
-            Console.WriteLine(rowSum);
+            Console.WriteLine(ts.countSymbol("sv1a6dbNJ5S2KDS53nda4nkd5s7S,D", '5'));
+
+            Console.WriteLine(ts.countSymbol("s1ah2nds4njah34nd", 'h'));
+
+            Console.WriteLine(ts.forUpper("s3Ssads6asGa4dsa4hhgh2dfG"));
+
+            Console.WriteLine(ts.nanForDigit("09s87654g32123d45678a")); // 5
+
+            Console.WriteLine(ts.forDigit("3fja4lksdfj2lkjl3k6j9"));
+
+            Console.WriteLine(ts.nanForUpper("DSADlJHSADGtASUIyDSrkAN"));
+
+            Console.WriteLine(ts.nanForDigit("r3j4658w31d1"));
+
+            Console.WriteLine(ts.forUpper("KsjDsSsadsaFs"));
+
+            Console.WriteLine(ts.forDigit("sdj433sakdjsa234sa3dns5ja"));
+
+
+
+
+
+
+
+
+
+
 
 
         }
