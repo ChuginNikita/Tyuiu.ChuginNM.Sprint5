@@ -8,25 +8,19 @@ namespace TestProject
         {
             TestLibService ts = new TestLibService();
 
-            Console.WriteLine(ts.nanForUpper("SDNsSA2KgDNJ5ShAJN3DNA6SJ"));
+            Console.WriteLine(ts.replaceWith("H65jSV5Dk8s", '5', '8'));
+            Console.WriteLine(ts.replaceWith("2gUU63sf82s1Ul7", 'U', '*'));
+            Console.WriteLine(ts.replaceWith("J8sdsaj8an8SA", '8', 'a'));
+            Console.WriteLine(ts.replaceWith("HSdsmandsHsk", 'H', 'h'));
+            Console.WriteLine(ts.replaceWith("sayhdkysanjhy", 'y', '0'));
 
-            Console.WriteLine(ts.countSymbol("sv1a6dbNJ5S2KDS53nda4nkd5s7S,D", '5'));
+            Console.WriteLine(ts.replaceWith("dkGsHHSadGnsHa", 'H', 'h'));
+            Console.WriteLine(ts.replaceWith("KbhYvhFp", 'h', '#'));
+            Console.WriteLine(ts.replaceWith("326198432994", '9', 'K'));
+            Console.WriteLine(ts.replaceWith("K*nHd**lS7l", '*', '#'));
+            Console.WriteLine(ts.replaceWith("S&N*DK*s2d7", '*', '#'));
 
-            Console.WriteLine(ts.countSymbol("s1ah2nds4njah34nd", 'h'));
 
-            Console.WriteLine(ts.forUpper("s3Ssads6asGa4dsa4hhgh2dfG"));
-
-            Console.WriteLine(ts.nanForDigit("09s87654g32123d45678a")); // 5
-
-            Console.WriteLine(ts.forDigit("3fja4lksdfj2lkjl3k6j9"));
-
-            Console.WriteLine(ts.nanForUpper("DSADlJHSADGtASUIyDSrkAN"));
-
-            Console.WriteLine(ts.nanForDigit("r3j4658w31d1"));
-
-            Console.WriteLine(ts.forUpper("KsjDsSsadsaFs"));
-
-            Console.WriteLine(ts.forDigit("sdj433sakdjsa234sa3dns5ja"));
 
 
 

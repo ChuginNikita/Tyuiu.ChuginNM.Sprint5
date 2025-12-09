@@ -1,19 +1,19 @@
-﻿using Tyuiu.ChuginNM.Sprint5.Task6.V8.Lib;
+﻿using Tyuiu.ChuginNM.Sprint5.Task7.V4.Lib;
 
-namespace Tyuiu.ChuginNM.Sprint5.Task6.V8
+namespace Tyuiu.ChuginNM.Sprint5.Task7.V4
 {
     class Program
     {
-        static void Main(string[] args) 
+        static void Main(string[] args)
         {
             DataService ds = new DataService();
 
             Console.Title = "Спринт #5 | Выполнил: Чугин Н. М. | АСОиУб-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Тема: Обработка текстовых файлов                                        *");
-            Console.WriteLine("* Задание #6                                                              *");
-            Console.WriteLine("* Вариант #8                                                              *");
+            Console.WriteLine("* Тема: Добавление к решению итоговых проектов по спринту                 *");
+            Console.WriteLine("* Задание #7                                                              *");
+            Console.WriteLine("* Вариант #4                                                              *");
             Console.WriteLine("* Выполнил: Чугин Никита Максимович | АСОиУб-25-1                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
@@ -28,7 +28,7 @@ namespace Tyuiu.ChuginNM.Sprint5.Task6.V8
             Console.WriteLine("* РЕЗУЛЬТАТ                                                               *");
             Console.WriteLine("***************************************************************************");
 
-            Console.WriteLine(ds.LoadFromDataFile(path));
+            Console.WriteLine(ds.LoadDataAndSave(path));
         }
     }
 }

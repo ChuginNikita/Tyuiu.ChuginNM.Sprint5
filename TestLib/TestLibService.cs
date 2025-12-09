@@ -53,6 +53,11 @@ namespace TestLib
             return newContent;
         }
 
+        public string replaceWith(string input, char c1, char c2)
+        {
+            return input.Replace(c1, c2);
+        }
+
 
     }
 }
