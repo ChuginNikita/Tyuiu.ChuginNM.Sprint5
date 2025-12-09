@@ -29,9 +29,7 @@ namespace Tyuiu.ChuginNM.Sprint5.Task3.V30
             Console.WriteLine("* РЕЗУЛЬТАТ                                                               *");
             Console.WriteLine("***************************************************************************");
 
-            string textFile = Path.Combine(Path.GetTempPath(), "OutPutFileTask3.bin");
-            var x = ds.SaveToFileTextData(3);
-            File.WriteAllText(textFile, x);
+            Console.WriteLine(ds.SaveToFileTextData(3));
         }
     }
 }
