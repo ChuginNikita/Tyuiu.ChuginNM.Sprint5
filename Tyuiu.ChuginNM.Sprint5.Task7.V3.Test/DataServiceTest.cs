@@ -1,10 +1,10 @@
-﻿namespace Tyuiu.ChuginNM.Sprint5.Task7.V4.Test
+﻿namespace Tyuiu.ChuginNM.Sprint5.Task7.V3.Test
 {
     [TestClass]
     public sealed class DataServiceTest
     {
         [TestMethod]
-        public void ValidExpression()
+        public void TestMethod1()
         {
         }
     }

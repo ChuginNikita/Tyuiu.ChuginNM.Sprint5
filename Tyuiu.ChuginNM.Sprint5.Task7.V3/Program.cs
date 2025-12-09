@@ -1,6 +1,6 @@
-﻿using Tyuiu.ChuginNM.Sprint5.Task7.V4.Lib;
+﻿using Tyuiu.ChuginNM.Sprint5.Task7.V3.Lib;
 
-namespace Tyuiu.ChuginNM.Sprint5.Task7.V4
+namespace Tyuiu.ChuginNM.Sprint5.Task7.V3
 {
     class Program
     {
@@ -11,9 +11,9 @@ namespace Tyuiu.ChuginNM.Sprint5.Task7.V4
             Console.Title = "Спринт #5 | Выполнил: Чугин Н. М. | АСОиУб-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
-            Console.WriteLine("* Тема: Добавление к решению итоговых проектов по спринту                 *");
+            Console.WriteLine("* Тема: Добавление итоговых решений по спринту                            *");
             Console.WriteLine("* Задание #7                                                              *");
-            Console.WriteLine("* Вариант #4                                                              *");
+            Console.WriteLine("* Вариант #3                                                              *");
             Console.WriteLine("* Выполнил: Чугин Никита Максимович | АСОиУб-25-1                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
@@ -22,13 +22,14 @@ namespace Tyuiu.ChuginNM.Sprint5.Task7.V4
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ                                                         *");
             Console.WriteLine("***************************************************************************");
-            string path = @"С:\DataSprint5\InPutDataFileTask6V8.txt";
+            string path = @"С:\DataSprint5\InPutDataFileTask7V3.txt";
             Console.WriteLine(path);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ                                                               *");
             Console.WriteLine("***************************************************************************");
 
             Console.WriteLine(ds.LoadDataAndSave(path));
+
         }
     }
 }
