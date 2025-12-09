@@ -1,6 +1,6 @@
-﻿using Tyuiu.ChuginNM.Sprint5.Task2.V7.Lib;
+﻿using Tyuiu.ChuginNM.Sprint5.Task3.V30.Lib;
 
-namespace Tyuiu.ChuginNM.Sprint5.Task2.V7
+namespace Tyuiu.ChuginNM.Sprint5.Task3.V30
 {
     class Program
     {
@@ -12,8 +12,8 @@ namespace Tyuiu.ChuginNM.Sprint5.Task2.V7
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Класс File. Запись данных в текстовый файл                        *");
-            Console.WriteLine("* Задание #2                                                              *");
-            Console.WriteLine("* Вариант #7                                                              *");
+            Console.WriteLine("* Задание #3                                                              *");
+            Console.WriteLine("* Вариант #30                                                             *");
             Console.WriteLine("* Выполнил: Чугин Никита Максимович | АСОиУб-25-1                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
@@ -23,22 +23,14 @@ namespace Tyuiu.ChuginNM.Sprint5.Task2.V7
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ                                                         *");
             Console.WriteLine("***************************************************************************");
 
-            int[,] matrix = new int[3, 3];
-            for (int i = 0; i < 3; i++)
-            {
-                for (int j = 0; j < 3; j++) 
-                {
-                    Console.WriteLine($"Введите элемент [{i}, {j}]: ");
-                    matrix [i, j] = Convert.ToInt32(Console.ReadLine());
-                }
-            }
+            Console.WriteLine("x = 3");
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ                                                               *");
             Console.WriteLine("***************************************************************************");
 
-            string textFile = Path.Combine(Path.GetTempPath(), "OutPutFileTask2.txt");
-            var x = ds.SaveToFileTextData(matrix);
+            string textFile = Path.Combine(Path.GetTempPath(), "OutPutFileTask3.bin");
+            var x = ds.SaveToFileTextData(3);
             File.WriteAllText(textFile, x);
         }
     }
