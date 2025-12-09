@@ -1,4 +1,5 @@
-﻿using tyuiu.cources.programming.interfaces.Sprint5;
+﻿using System.Globalization;
+using tyuiu.cources.programming.interfaces.Sprint5;
 
 namespace Tyuiu.ChuginNM.Sprint5.Task4.V1.Lib
 {
@@ -7,7 +8,7 @@ namespace Tyuiu.ChuginNM.Sprint5.Task4.V1.Lib
         public double LoadFromDataFile(string path)
         {
             string strx = File.ReadAllText(path);
-            double x = double.Parse(strx);
+            double x = double.Parse(strx, CultureInfo.InvariantCulture);
             double y = Math.Round(((1 / (Math.Cos(x) + x)) - 4.12 * x), 3);
             return y;
         }
