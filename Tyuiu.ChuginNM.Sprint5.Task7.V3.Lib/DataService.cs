@@ -11,7 +11,7 @@ namespace Tyuiu.ChuginNM.Sprint5.Task7.V3.Lib
     {
         public string LoadDataAndSave(string path)
         {
-            string pathSaveFile = $@"{Directory.GetCurrentDirectory()}/OutPutDataFileTask7V3.txt"; ;
+            string pathSaveFile = Path.Combine(Path.GetTempPath(),@"OutPutDataFileTask7V3.txt");
             FileInfo fileinfo = new FileInfo(pathSaveFile);
             bool fileexists = fileinfo.Exists;
 
